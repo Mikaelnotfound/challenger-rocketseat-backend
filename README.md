@@ -1,5 +1,7 @@
 # Rocketseat Challenge: Node.js & TypeScript Backend
 
+![Status](https://img.shields.io/badge/status-in%20progress-blue)
+
 This project is a backend application developed as part of a Rocketseat challenge. The primary goal is to learn and apply modern technologies and trends in the Node.js and TypeScript development ecosystem.
 
 ## Technologies Used
