@@ -10,6 +10,9 @@ This project is a backend application developed as part of a Rocketseat challeng
 *   **TypeScript:** A typed superset of JavaScript that compiles to plain JavaScript.
 *   **Fastify:** A fast and low overhead web framework, for Node.js.
 *   **tsx:** A CLI tool for seamlessly running TypeScript and ESM.
+*   **Drizzle ORM:** A TypeScript ORM for SQL databases.
+*   **PostgreSQL:** A powerful, open source object-relational database system.
+*   **Zod:** A TypeScript-first schema declaration and validation library.
 
 ## Getting Started
 
@@ -17,8 +20,9 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 ### Prerequisites
 
-You need to have Node.js and npm (or another package manager) installed on your machine.
+You need to have Node.js, npm (or another package manager), and Docker installed on your machine.
 *   [Node.js](https://nodejs.org/)
+*   [Docker](https://www.docker.com/)
 
 ### Installation
 
@@ -30,13 +34,46 @@ You need to have Node.js and npm (or another package manager) installed on your 
     ```bash
     npm install
     ```
+3.  Create a `.env` file based on the `.env.example` file and fill in the environment variables.
 
 ### Running the Application
 
-To start the development server with live-reloading, run the following command:
+1.  Start the PostgreSQL database using Docker:
+    ```bash
+    docker-compose up -d
+    ```
+2.  Run the database migrations:
+    ```bash
+    npm run db:migrate
+    ```
+3.  To start the development server with live-reloading, run the following command:
+    ```bash
+    npm run dev
+    ```
 
+The server will start, and you can access it at the configured address (typically `http://localhost:3333` or similar).
+
+## Database
+
+This project uses **Drizzle ORM** to interact with a **PostgreSQL** database. The database schema is defined in the `src/database/schema.ts` file.
+
+To generate new migrations based on schema changes, run the following command:
 ```bash
-npm run dev
+npm run db:generate
 ```
 
-The server will start, and you can access it at the configured address (typically `http://localhost:3000` or similar).
+To apply the migrations to the database, run:
+```bash
+npm run db:migrate
+```
+
+You can also use Drizzle Studio to browse the database:
+```bash
+npm run db:studio
+```
+
+## API Documentation
+
+This project uses `@fastify/swagger` and `@scalar/fastify-api-reference` to generate API documentation.
+
+You can access the Swagger documentation at `http://localhost:3333/docs`.
