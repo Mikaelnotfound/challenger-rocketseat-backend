@@ -37,7 +37,6 @@ export const getCourseByIdRoute: FastifyPluginAsyncZod = async (server) => {
         .where(eq(courses.id, courseId));
 
       if (result.length > 0) {
-        // The return needs to match the schema, which expects an object with a 'course' property.
         return { course: result[0] };
       }
 
@@ -45,3 +44,4 @@ export const getCourseByIdRoute: FastifyPluginAsyncZod = async (server) => {
     },
   );
 };
+
