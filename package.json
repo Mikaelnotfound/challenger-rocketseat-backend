@@ -12,9 +12,16 @@
     "db:studio": "drizzle-kit studio",
     "pretest": "dotenv -e .env.test drizzle-kit migrate"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "TypeScript",
+    "nodejs",
+    "study",
+    "backend",
+    "postgresql",
+    "vitest"
+  ],
+  "author": "Mikael Carlos",
+  "license": "MIT",
   "description": "",
   "dependencies": {
     "@faker-js/faker": "^9.9.0",
