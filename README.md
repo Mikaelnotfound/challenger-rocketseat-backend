@@ -13,6 +13,9 @@ This project is a backend application developed as part of a Rocketseat challeng
 *   **Drizzle ORM:** A TypeScript ORM for SQL databases.
 *   **PostgreSQL:** A powerful, open source object-relational database system.
 *   **Zod:** A TypeScript-first schema declaration and validation library.
+*   **Vitest:** A blazing fast unit-test framework powered by Vite.
+*   **Supertest:** A library for testing Node.js http servers.
+*   **Dotenv:** A zero-dependency module that loads environment variables from a `.env` file into `process.env`.
 
 ## Getting Started
 
@@ -34,7 +37,7 @@ You need to have Node.js, npm (or another package manager), and Docker installed
     ```bash
     npm install
     ```
-3.  Create a `.env` file based on the `.env.example` file and fill in the environment variables.
+3. Copy .env.example to .env and .env.test.example to .env.test. Then, fill in the required environment variables in both files.
 
 ### Running the Application
 

@@ -44,4 +44,3 @@ export const getCourseByIdRoute: FastifyPluginAsyncZod = async (server) => {
     },
   );
 };
-

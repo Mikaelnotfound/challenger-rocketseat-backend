@@ -9,9 +9,9 @@
     "target": "es2022",
     "noEmit": true,
     "allowInportingExtensions": true,
-
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "moduleResolution": "node16"
   }
+}
