@@ -37,7 +37,7 @@ You need to have Node.js, npm (or another package manager), and Docker installed
     ```bash
     npm install
     ```
-3. Copy .env.example to .env and .env.test.example to .env.test. Then, fill in the required environment variables in both files.
+3. Copy `.env.example` to `.env` and `.env.test.example` to `.env.test`. Then, fill in the required environment variables in both files.
 
 ### Running the Application
 
